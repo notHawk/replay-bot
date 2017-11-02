@@ -1,0 +1,19 @@
+Commands:
+
+!Ping - Replys wign Pong
+!Userinfo - Replys with your discord account infos
+!Purge <number> - Delete an amount of messages
+!Avatar - Returns the user avatar
+
+
+message.channel.send({embed:{
+    title:"Ping!",
+    description:"Pong!",
+    url:"http://google.com/", // Makes pong a clickable link
+    color: 0x5DADE2,
+    fields:[
+        {
+            name:"This is a name!",
+            value:"This is the **decription**, using formatting *works*, [and even links!](http://google.com)",
+            inline:true // Not next to eachoter, remove it to have them next to eachoter
+        }
